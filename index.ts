@@ -32,7 +32,7 @@ if (argv.length > 3) {
 					console.log(text);
 				}
 			} catch (error) {
-				console.log(error);
+				console.error(`An unknown error has occurred : ${error}`);
 			}
 		} else {
 			console.log("UserInput cannot be an empty string.");
