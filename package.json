@@ -1,16 +1,19 @@
 {
-  "name": "github-activity",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "typecheck": "bun check"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.6.7",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  }
+	"name": "github-activity",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"typecheck": "bun check",
+		"github-activity": "bun run index.ts",
+		"lint": "bun run biome lint --write",
+		"format": "bun run biome format --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.7",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^7"
+	}
 }
